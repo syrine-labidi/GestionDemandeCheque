@@ -1,0 +1,46 @@
+﻿@using GchequeWebApp.Models
+@model demandes
+
+@{
+    ViewData["Title"] = "ajouter une demande";
+}
+<div class="card text-center">
+  <div class="card-header text-white bg-primary mb-3">
+    <h5>Création d'une nouvelle demande de chèque</h5>
+  </div>
+    <div class="card-body">
+      <div style="text-align:left;"> 
+      <h5 class="card-title"> Entrer les informations nécessaires : </h5>
+      </div>
+        <form>
+          <div style="text-align:left;">
+          <br/>
+          
+          <!-- Text input -->
+          <div class="form-group">
+            <div class="form-outline mb-4"> Date d'ouverture : <input type="text" placeholder="Readonly input here…" readonly>
+          </div>
+          
+          <!-- Text input -->
+          <div class="form-group">
+            <label class="form-outline mb-4"> Numéro de la demande : </label> <input type="text">
+          </div>
+          
+          <!-- Pièce jointe mail demande -->
+          <div class="form-group">
+            <label for="exampleFormControlFile1"> E-mail en pièce jointe : </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+          </div>
+          </div>
+           <br />
+          <!-- Submit button -->
+          <div style="text-align:right;"> 
+          <button type="submit" class="btn btn-primary btn-lg btn-block" >   Valider  </button>
+          </div>
+        </form>
+    </div>
+</div>
+
+

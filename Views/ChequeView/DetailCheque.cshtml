@@ -1,0 +1,149 @@
+﻿@using GchequeWebApp.Models
+@model cheques
+
+@{
+    ViewData["Title"] = "ajouter une demande";
+}
+
+
+<div class="card text-center">
+  <div class="card-header text-white bg-primary mb-3">
+    <h5> Demande de consultation de chèque </h5>
+  </div>
+    <div class="card-body">
+      <div style="text-align:left;"> 
+      <h5 class="card-title"> veuillez remplir le formulaire de la demande de consultation de chèque : </h5>
+      </div>
+        <form>
+          <div style="text-align:left;">
+          <br/>
+          
+          
+          
+          <!-- Text input -->
+          <div class="form-group">
+            <label class="form-outline mb-4"> Numéro de la demande : </label> <input type="text">
+          </div>
+          
+          
+          <!-- Text input -->
+                  <div >  
+                        <FORM> L'institution :
+                        <SELECT name="institution" size="1">
+                        <option>BCT</option>
+                        <option>AB</option>
+                        <option selected>ATB</option>
+                        <option>STB</option>
+                        <option>BIAT</option>
+                        </SELECT>
+                        </FORM>
+                  </div>
+          <br/>
+          <!-- Text input -->
+          <div class="form-group">
+            <label class="form-outline mb-4"> date de présentation : </label> <input type="date">
+          </div>
+
+          
+          <!-- Text input -->
+          <div class="form-group">
+            <label class="form-outline mb-4"> Montant de chèque : </label> <input type="text">
+          </div>
+
+
+          
+          <!-- Text input -->
+          <div class="form-group">
+            <label class="form-outline mb-4"> Nombre de jours  : </label> <input type="text">
+          </div>
+
+          
+
+           
+          <!-- Text input -->
+          <div class="form-group">
+            <label class="form-outline mb-4"> Montant tarifs  : </label> <input type="text">
+          </div>
+
+          <!-- Pièce jointe mail demande -->
+          <div class="form-group">
+            <label for="exampleFormControlFile1"> Image du chèque : </label>
+            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+          </div>
+
+          </div>
+          
+           <br />
+
+          <!-- Submit button -->
+          <div style="text-align:right;"> 
+          <button type="submit" class="btn btn-primary btn-lg btn-block" >   Valider  </button>
+          </div>
+          
+        </form>
+   
+        <br/>
+ </div>
+    <!-- tableau recherche result-->
+
+    <div class="card text-center">
+         <div class="card-header text-white bg-primary mb-3">
+            <h5> Liste des demandes de consultation de chèque </h5>
+         </div>
+
+        <div class="card-body">
+
+                    <table class="table table-striped" border="1">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Demande</th>
+                          <th scope="col">Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>52145</td>
+                          <td>
+                             <div style="text-align:center;"> 
+                              <button type="submit" class="btn btn-primary" >   Modifier  </button>
+                             </div>
+                          </td>            
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <<td>78950</td>
+                          <td>
+                             <div style="text-align:center;"> 
+                              <button type="submit" class="btn btn-primary" >   Modifier  </button>
+                             </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>45875</td>
+                          <td>
+                             <div style="text-align:center;"> 
+                              <button type="submit" class="btn btn-primary" >   Modifier  </button>
+                             </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                </table>
+
+                <div class="form-check"  style="text-align:right;">
+                  <input  type="checkbox" value="" id="defaultCheck1">
+                  Clôture de la demande
+                </div>
+
+            </div>
+
+            
+          
+    </div>
+</div>
+
+
+
+

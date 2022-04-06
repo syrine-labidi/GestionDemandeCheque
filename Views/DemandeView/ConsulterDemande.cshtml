@@ -1,0 +1,69 @@
+﻿@using GchequeWebApp.Models
+@model demandes
+
+@{
+    ViewData["Title"] = "Consulter une demande";
+}
+
+<!-- tableau recherche result-->
+<div class="card text-center">
+
+         <div class="card-header text-white bg-primary mb-3">
+            <h5> Liste des demandes de consultation de chèque traitées </h5>
+         </div>
+
+<div class="card-body">
+
+            <table class="table table-striped" border="1">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Demande</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>52145</td>
+                  <td>
+                      <div style="text-align:center;"> 
+                              <button type="submit" class="btn btn-primary" >   Générer bordereau de livraison  </button>
+                              <div class="form-check"  >
+                                  <input style="text-align:center;" type="checkbox" value="" id="defaultCheck1">
+                                  Demande livrée
+                               </div>
+                      </div>
+                       
+                  </td>             
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <<td>78950</td>
+                  <td>
+                      <div style="text-align:center;"> 
+                              <button type="submit" class="btn btn-primary" >   Générer bordereau de livraison  </button>
+                              <div class="form-check"  >
+                                  <input style="text-align:center;" type="checkbox" value="" id="defaultCheck1">
+                                  Demande livrée
+                               </div>
+                      </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>45875</td>
+                  <td>
+                      <div style="text-align:center;"> 
+                              <button type="submit" class="btn btn-primary" >   Générer bordereau de livraison  </button>
+                              <div class="form-check"  >
+                                  <input style="text-align:center;" type="checkbox" value="" id="defaultCheck1">
+                                  Demande livrée
+                               </div>
+                      </div>
+                  </td>
+                </tr>
+              </tbody>
+        </table>
+    </div>
+</div>

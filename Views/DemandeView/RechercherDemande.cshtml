@@ -1,0 +1,88 @@
+﻿@using GchequeWebApp.Models
+@model demandes
+
+@{
+    ViewData["Title"] = "Rechercher une demande";
+}
+<div class="card text-center">
+  <div class="card-header text-white bg-primary mb-3">
+    <h5>Rechercher la demande de chèque</h5>
+  </div>
+    <div class="card-body">
+      <div style="text-align:left;"> 
+      <h5 class="card-title"> Entrer les informations nécessaires : </h5>
+      </div>
+        <form>
+          <div style="text-align:left;">
+                  <br/>
+          
+                  <!-- Text input -->
+                  <div class="form-outline mb-4"> Numéro d'arrivé : <input type="text"  /></div>
+          
+                  <!-- Text input -->
+                  <div >  
+                        <FORM> L'institution :
+                        <SELECT name="institution" size="1">
+                        <option>BCT</option>
+                        <option>AB</option>
+                        <option selected>ATB</option>
+                        <option>STB</option>
+                        <option>BIAT</option>
+                        </SELECT>
+                        </FORM>
+                  </div>
+          </div>
+
+          <br/>
+          <!-- Submit button -->
+          <div style="text-align:right;"> 
+          <button type="submit" class="btn btn-primary btn-lg btn-block" >   Rechercher  </button>
+          </div>
+        </form>
+    </div>
+</div>
+
+<br/>
+
+<!-- tableau recherche result-->
+<div class="card text-center">
+
+         <div class="card-header text-white bg-primary mb-3">
+            <h5> Liste des demandes de consultation de chèque </h5>
+         </div>
+
+<div class="card-body">
+
+            <table class="table table-striped" border="1">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Demande</th>
+                  <th scope="col">Etat de la demande</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>52145</td>
+                  <td>Livré</td>             
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <<td>78950</td>
+                  <td>Livré</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>45875</td>
+                  <td>Livré</td>
+                </tr>
+              </tbody>
+        </table>
+</div>
+          <div class="card-footer text-muted">
+      
+           <p>Date courante :  </p>
+    
+          </div>
+</div>
